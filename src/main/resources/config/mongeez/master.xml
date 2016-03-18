@@ -1,0 +1,7 @@
+<changeFiles>
+    <file path="authorities.xml"/>
+    <file path="users.xml"/>
+    <file path="bank_accounts.xml"/>
+    <file path="transactions.xml"/>
+    <file path="social_user_connections.xml"/>
+</changeFiles>

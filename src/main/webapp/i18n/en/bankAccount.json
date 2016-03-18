@@ -1,0 +1,29 @@
+{
+    "jwalletApp": {
+        "bankAccount" : {
+            "home": {
+                "title": "My Bank Accounts",
+                "createLabel": "Add a new Bank Account",
+                "createTitle": "Create Bank Account",
+                "closeTitle": "Close Bank Account"
+            },
+            "actions": {
+            	"viewTransactions": "View Transactions",
+            	"close": "Close Account"
+            },
+            "created": "Bank Account {{ param }} has been created",
+            "updated": "Bank Account {{ param }} has been updated",
+            "deleted": "A Bank Account is deleted with identifier {{ param }}",
+            "closed": "Bank Account {{ param }} has been closed",
+            "delete": {
+                "question": "Are you sure you want to delete BankAccount {{ id }}?"
+            },
+            "detail": {
+                "title": "BankAccount"
+            },
+            "balance": "Account Balance",
+            "number": "Account Number",
+            "target": "Target Account"
+        }
+    }
+}

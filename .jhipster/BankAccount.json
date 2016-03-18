@@ -1,0 +1,13 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "balance",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "dto": "no",
+    "service": "serviceClass",
+    "pagination": "pagination"
+}

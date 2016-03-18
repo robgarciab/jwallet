@@ -1,0 +1,37 @@
+<mongoChangeLog>
+    <changeSet changeId="ChangeSet-2" author="jhipster">
+        <script>
+            db.bank_account.insert(
+            {
+                "_id" : "bank-account-0",
+                "number" : "192-20945875-0-88",
+                "balance" : 1000.00,
+                "active" : true,
+                "jhi_user_id" : "user-2"
+            });
+            db.bank_account.insert(
+            {
+                "_id" : "bank-account-1",
+                "number" : "192-20945876-0-88",
+                "balance" : 1500.00,
+                "jhi_user_id" : "user-2"
+            });
+            db.bank_account.insert(
+            {
+                "_id" : "bank-account-2",
+                "number" : "192-20999845-0-88",
+                "balance" : 3000.00,
+                "active" : true,
+                "jhi_user_id" : "user-3"
+            });
+            db.bank_account.insert(
+            {
+                "_id" : "bank-account-3",
+                "number" : "192-20999846-0-88",
+                "balance" : 10000.00,
+                "active" : true,
+                "jhi_user_id" : "user-3"
+            });
+        </script>
+    </changeSet>
+</mongoChangeLog>

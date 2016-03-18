@@ -1,0 +1,38 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myTransactionLabel" translate="jwalletApp.transaction.home.createTitle">Create a Transaction</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label class="control-label" translate="jwalletApp.transaction.bankAccount" for="field_bankAccount">Bank Account</label>
+		    <select class="form-control" name="bankAccount" id="field_bankAccount" ng-model="bankAccount" 
+		    	ng-options="bankAccount.number for bankAccount in bankAccounts">
+    		</select>
+        </div>
+        <div class="form-group">
+        	<button type="button" class="btn btn-success" ng-model="action" uib-btn-checkbox btn-checkbox-true="'jwalletApp.transaction.actions.extract'" 
+            		btn-checkbox-false="'jwalletApp.transaction.actions.add'">
+            	<span ng-class="{ 'glyphicon-minus': action == 'jwalletApp.transaction.actions.extract' }" class="glyphicon glyphicon-plus"></span>
+            	&nbsp;<span translate="{{action}}">Action</span>
+    		</button>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="jwalletApp.transaction.amount" for="field_amount">Amount</label>
+            <input type="number" class="form-control" name="amount" id="field_amount"
+            	ng-model="transaction.amount" />
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

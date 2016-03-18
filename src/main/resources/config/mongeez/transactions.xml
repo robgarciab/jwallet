@@ -1,0 +1,42 @@
+<mongoChangeLog>
+    <changeSet changeId="ChangeSet-2" author="jhipster">
+        <script>
+            db.transaction.insert(
+            {
+                "_id" : "transaction-0",
+                "bank_account_id" : "bank-account-0",
+                "bank_account_number" : "192-20945875-0-88",
+                "date" : ISODate("2015-12-30T14:20:00Z"),
+                "amount" : 99.90,
+                "description" : "Deposit to your account"
+            });
+            db.transaction.insert(
+            {
+                "_id" : "transaction-1",
+                "bank_account_id" : "bank-account-1",
+                "bank_account_number" : "192-20945876-0-88",
+                "date" : ISODate("2016-01-12T17:25:00Z"),
+                "amount" : 100.50,
+                "description" : "Deposit to your account"
+            });
+            db.transaction.insert(
+            {
+                "_id" : "transaction-2",
+                "bank_account_id" : "bank-account-2",
+                "bank_account_number" : "192-20999845-0-88",
+                "date" : ISODate("2016-02-03T16:10:00Z"),
+                "amount" : 140.00,
+                "description" : "Deposit to your account"
+            });
+            db.transaction.insert(
+            {
+                "_id" : "transaction-3",
+                "bank_account_id" : "bank-account-3",
+                "bank_account_number" : "192-20999846-0-88",
+                "date" : ISODate("2016-01-30T18:50:00Z"),
+                "amount" : 60.00,
+                "description" : "Deposit to your account"
+            });
+        </script>
+    </changeSet>
+</mongoChangeLog>

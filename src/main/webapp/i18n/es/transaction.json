@@ -1,0 +1,30 @@
+{
+    "jwalletApp": {
+        "transaction" : {
+            "home": {
+                "title": "Transactions for account {{ param }}",
+                "allTitle": "All Transactions",
+                "createLabel": "Create a new Transaction",
+                "createTitle": "Create a Transaction",
+                "editTitle": "Edit a Transaction"
+            },
+            "actions" : {
+            	"add": "Add",
+            	"extract": "Extract"
+            },
+            "created": "A new Transaction is created with identifier {{ param }}",
+            "updated": "A Transaction is updated with identifier {{ param }}",
+            "deleted": "A Transaction is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Transaction {{ id }}?"
+            },
+            "detail": {
+                "title": "Transaction"
+            },
+            "amount": "Amount",
+            "bankAccount": "Bank Account",
+            "date": "Transaction Date",
+            "description": "Description"
+        }
+    }
+}

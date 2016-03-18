@@ -1,0 +1,7 @@
+jwallet-dev-mongodb:
+  container_name: jwallet-dev-mongodb
+  image: mongo:3.0.7
+  # volumes:
+  #   - ~/volumes/jhipster/jwallet/dev-mongodb/:/data/db/
+  ports:
+    - "27017:27017"

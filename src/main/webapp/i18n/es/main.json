@@ -3,7 +3,7 @@
         "title": "JWallet",
         "subtitle": "Java wallet",
         "logged": {
-            "message": "Usted está ha iniciado sesión como \"{{username}}\"."
+            "message": "Usted ha iniciado sesión como \"{{username}}\"."
         },
         "question": "Si tiene alguna pregunta con respecto a JHipster:",
         "link": {
